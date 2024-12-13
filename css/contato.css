@@ -1,0 +1,68 @@
+.contato {
+    background: var(--branco);
+    color: var(--azul-escuro);
+    padding: 2.5em 2em;
+}
+
+.contato__titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato__texto {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 1em 0;
+    line-height: 1.6;
+}
+
+.contato__pesquisa {
+    background-color: transparent;
+    border: 1px solid var(--azul-escuro);
+    color: var(--azul-escuro);
+    border-radius: 24px;
+    padding: 1em;
+    width: calc(100% - 2em);
+}
+
+.contato__pesquisa::placeholder {
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--azul-escuro);
+    background: url("/assets/Email.svg") no-repeat;
+    background-position: 1em;
+}
+
+.contato__pesquisa:focus::placeholder {
+    color: transparent;
+    background: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .contato {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .contato__titulo {
+        font-size: 24px;
+    }
+
+    .contato__descricao {
+        margin-right: 1em;
+        width: 30%;
+    }
+
+    .contato__pesquisa {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        padding: 3em 20vw;
+    }
+}
