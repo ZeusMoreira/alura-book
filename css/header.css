@@ -83,13 +83,18 @@
     display: none;
 }
 
+.container__texto {
+    display: none;
+}
+
+
 @media screen and (min-width: 1024px) {
     .cabecalho {
         padding: 0 2em;
     }
     
-    .cabecalho__botao, .cabecalho__label, .container__favoritos {
-        display: none;
+    .cabecalho__botao, .cabecalho__label, .container__favoritos, .lista-menu {
+        display: none !important;
     }
 
     .container__logo {
@@ -122,7 +127,7 @@
     }
 
     .lista__botao:checked ~ .lista-menu {
-        display: block;
+        display: block !important;
         width: auto;
     }
 
@@ -149,10 +154,6 @@
         text-decoration: none;
     }
 
-}
-
-.container__texto {
-    display: none;
 }
 
 @media screen and (min-width: 1728px) {
